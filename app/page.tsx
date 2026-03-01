@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Home() {
@@ -255,9 +256,9 @@ export default function Home() {
             <span className="text-gradient">Mukesh</span>Technologies
           </div>
           <div className="flex gap-10 text-white/40 text-sm">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">Cookies</a>
+            <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+            <Link href="#" className="hover:text-white transition-colors">Cookies</Link>
           </div>
           <p className="text-white/20 text-sm">
             © 2026 Mukesh Technologies. All rights reserved.
